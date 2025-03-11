@@ -1,5 +1,12 @@
 # Prompt Engineering Lab
 
+## Submission Information
+
+*   **Full Name**: Dương Hoàng Lan Anh
+*   **Student ID**: 21087481
+
+---
+
 ## Project Description
 
 This repository contains the Python source code for exercises related to **Prompt Engineering Lab**.
