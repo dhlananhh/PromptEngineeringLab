@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
+GOOGLE_API_KEY = os.environ.get("GEMINI_API_KEY")
 genai.configure(api_key=GOOGLE_API_KEY)
 
 model = genai.GenerativeModel('gemini-2.0-flash')
@@ -15,8 +15,9 @@ def send_prompt(prompt, system_message=None, model_name='gemini-2.0-flash'):
 
     Args:
         prompt (str): Nội dung prompt (câu hỏi, yêu cầu).
-        system_message (str, optional): Thông điệp hệ thống (hướng dẫn vai trò - hiện tại Gemini-Flash không trực tiếp dùng system message,
-                                        nhưng có thể đưa vào prompt). Mặc định: None.
+        system_message (str, optional):
+            Thông điệp hệ thống (hướng dẫn vai trò - hiện tại Gemini-Flash không trực tiếp dùng system message, nhưng có thể đưa vào prompt).
+            Mặc định: None.
         model_name (str, optional): Model Gemini sử dụng. Mặc định: 'gemini-2.0-flash'.
 
     Returns:
